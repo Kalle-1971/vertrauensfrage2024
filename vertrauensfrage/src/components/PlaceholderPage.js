@@ -38,5 +38,6 @@ function PlaceholderPage() {
     </div>
   );
 }
+// npm run deploy zum Neustart der Github Seite
 // Karikaturen, Impressum? Memes?
 export default PlaceholderPage;
