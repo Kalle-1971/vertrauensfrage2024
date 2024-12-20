@@ -14,17 +14,17 @@ function PlaceholderPage() {
       <h1 className="page-title">Die Aktuelle politische Situation 2024/25</h1>
       <div className="image-container">
         <img
-          src="/images/OlafScholz.png"
+          src={`${process.env.PUBLIC_URL}/images/OlafSchol.png`}
           alt="Zentrale Person"
           className="center-image"
         />
         <img
-          src="/images/left.png"
+          src={`${process.env.PUBLIC_URL}/images/left.png`}
           alt="Linkes Bild"
           className="side-image left"
         />
         <img
-          src="/images/right.png"
+          src={`${process.env.PUBLIC_URL}/images/right.png`}
           alt="Rechtes Bild"
           className="side-image right"
         />

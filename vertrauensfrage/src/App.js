@@ -13,7 +13,7 @@ function App() {
   };
 
   return (
-    <Router>
+    <Router basename="/vertrauensfrage2024">
       <div className="App">
         {captchaSolved ? (
           <Routes>

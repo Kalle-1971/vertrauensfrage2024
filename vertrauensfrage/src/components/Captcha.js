@@ -51,7 +51,7 @@ function Captcha({ onSuccess }) {
             className={`grid-item ${selected.includes(item.id) ? "selected" : ""}`}
             onClick={() => handleSelect(item.id)}
           >
-            <img src={`/images/item${item.id}.jpg`} alt={`Item ${item.id}`} />
+            <img src={`${process.env.PUBLIC_URL}/images/item${item.id}.jpg`} alt={`Item ${item.id}`} />
           </div>
         ))}
       </div>
