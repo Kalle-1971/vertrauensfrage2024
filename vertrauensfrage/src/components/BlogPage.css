@@ -1,15 +1,28 @@
 .blog-page {
-    padding: 20px;
-    font-family: Arial, sans-serif;
-  }
-  
-  .blog-page h1 {
-    font-size: 28px;
-    margin-bottom: 10px;
-  }
-  
-  .blog-page p {
-    font-size: 18px;
-    line-height: 1.6;
-  }
-  
+  max-width: 700px; /* Maximale Breite des Containers */
+  margin: 0 auto;   /* Zentriert den Container auf der Seite */
+  padding: 20px;    /* Füge etwas Abstand innen hinzu */
+  background-color: #fff;  /* Weißer Hintergrund für den Bereich */
+  border-radius: 8px; /* Optional: Abgerundete Ecken für den Container */
+}
+
+.blog-page h1 {
+  font-size: 2rem; /* Vergrößere die Schriftgröße der Überschrift */
+  text-align: left; /* Zentriere die Überschrift */
+}
+
+.blog-page div {
+  text-align: left;
+  line-height: 1.6; /* Zeilenhöhe für bessere Lesbarkeit */
+}
+.special-image {
+  max-width: 100%;     /* Bild nicht breiter als der Container */
+  height: auto;        /* Höhe wird automatisch angepasst */
+  display: block;      /* Verhindert, dass das Bild als Inline-Element angezeigt wird */
+  margin-top: 20px;    /* Abstand nach oben */
+}
+
+.image-url {
+  font-size: xx-small;
+  text-align: left;
+}
