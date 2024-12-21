@@ -10,7 +10,10 @@ const blogContent = {
      "<p> Während diese politischen Entscheidungen getroffen werden, geht die Arbeit weiter. Am 20. Dezember kommt der Bundesrat zusammen. Das ist eine Versammlung, in der die Bundesländer mitentscheiden können, welche Gesetze in Deutschland gelten sollen. Dort könnten wichtige Themen beschlossen werden, zum Beispiel die Verlängerung des Deutschlandtickets, mit dem man günstig Bus und Bahn fahren kann, oder ein neues Gesetz zum Schutz des Bundesverfassungsgerichts. Auch Steuerentlastungen und eine Erhöhung des Kindergeldes, die von den Parteien der alten Ampel-Regierung vorgeschlagen wurden, könnten noch beschlossen werden, wenn der Bundestag vorher zustimmt. Sollte es bis Februar keine weiteren Gesetze mehr geben, könnte die nächste Sitzung des Bundesrates, die für den 14. Februar 2025 geplant ist, ausfallen. Die Parteien bereiten sich inzwischen auf die Neuwahlen vor. Jede Partei will zeigen, warum sie die beste Wahl für die Zukunft Deutschlands ist, und wählt dafür auch ihre Spitzenkandidaten. Am 11. Januar hält die SPD einen Parteitag ab, bei dem Olaf Scholz offiziell als Kanzlerkandidat nominiert und das Wahlprogramm beschlossen werden sollen. Gleichzeitig, am 11. und 12. Januar, wird die AfD ihren Parteitag in Riesa veranstalten. Dort will die Partei Alice Weidel als Kanzlerkandidatin aufstellen und ihr Wahlprogramm verabschieden. Am 12. Januar plant auch das Bündnis Sahra Wagenknecht (BSW) einen Parteitag in Bonn, um sein Programm für die Wahl zu beschließen. Eine Woche später, am 18. Januar, trifft sich die Linke, um über ihr Wahlprogramm abzustimmen. Die Grünen wollen dies am 26. Januar auf ihrem Parteitag tun. Ihr Kanzlerkandidat, Robert Habeck, wurde bereits im November mit einer deutlichen Mehrheit gewählt.</p>"+
      "<p> Auch die CDU und die CSU, zwei Parteien, die oft zusammenarbeiten, bereiten sich vor. Am 3. Februar hält die CDU ihren Parteitag ab, die CSU folgt am 8. Februar. Beide Parteien wollen ein gemeinsames Programm vorstellen, das die wichtigsten Ziele für die ersten 100 Tage nach der Wahl enthält. Am 9. Februar wird es ein spannendes TV-Duell zwischen Olaf Scholz und Friedrich Merz von der CDU geben. Solche Duelle sind wichtige Diskussionen im Fernsehen, bei denen die Kandidaten ihre Pläne vorstellen und sich gegenseitig Fragen stellen. Am gleichen Tag hält die FDP ihren Parteitag ab, bei dem Christian Lindner als Spitzenkandidat gewählt werden soll.</p><p> Am 11. Februar findet eine große Generaldebatte im Bundestag statt. Diese Debatte ist traditionell vor Wahlen eine wichtige Gelegenheit für die Kanzlerkandidaten, ihre Positionen zu erklären und mit den anderen zu diskutieren. Wenige Tage später, am 16. Februar, gibt es ein weiteres TV-Duell. Dieses Mal könnten auch Robert Habeck von den Grünen und Alice Weidel von der AfD teilnehmen. Der Sender RTL plant zudem, eine größere Diskussionsrunde mit mehreren Kandidaten zu organisieren.</p><p>In der Woche vor der Wahl, vom 17. bis 21. Februar, hat der Bundestag seine letzte Sitzungswoche. In dieser Zeit könnten noch wichtige Entscheidungen getroffen werden, bevor am Sonntag, dem 23. Februar 2025, die vorgezogene Bundestagswahl stattfindet. Danach beginnt die Suche nach einer neuen Regierung. Wenn keine Partei alleine regieren kann, müssen mehrere Parteien miteinander verhandeln, um eine Koalition, also ein Bündnis aus mehreren Parteien zu bilden. In diesen Gesprächen wird besprochen, wie sie gemeinsam regieren wollen. Spätestens am 25. März muss der neu gewählte Bundestag zu seiner ersten Sitzung zusammenkommen. Bei dieser Sitzung werden wichtige Ämter wie der Bundestagspräsident gewählt, und die Abgeordneten legen ihre Regeln für die Arbeit im Parlament fest.</p><p>Nach der ersten Sitzung wird auch der neue Bundeskanzler oder die neue Bundeskanzlerin vom Bundestag gewählt. Diese Person stellt dann ihr Team aus Ministern vor, die für die verschiedenen Bereiche wie Gesundheit, Bildung oder Umwelt zuständig sind. Die Vereidigung der neuen Regierung könnte frühestens im April 2025 stattfinden. Bis dahin bleibt die bisherige Regierung geschäftsführend im Amt, damit Deutschland handlungsfähig bleibt.</p>"+
      "<p>Welche Parteien bei einer Neuwahl ganz vorne dabei sind, könnt ihr hier herausfinden:</p>",
-  3: "",
+  3: "<p style='font-size: larger; font-style: italic;' >Prognosen zur Wahl 2025</p>"+
+     "<p>Die Bundestagswahl 2025 steht vor der Tür, und schon jetzt gibt es spannende Umfragen, die zeigen, wie die Menschen in Deutschland wählen könnten. Wenn die Wahl schon am kommenden Sonntag stattfinden würde, läge die CDU/CSU deutlich vorne und könnte mit 31 Prozent der Stimmen rechnen. Dahinter folgen die AfD mit 19 Prozent, die SPD mit 15 Prozent und die Grünen mit 14 Prozent. Kleinere Parteien wie die FDP mit 3 Prozent und die Linke mit 4 Prozent hätten es schwer, in den Bundestag einzuziehen, weil sie die wichtige Fünf-Prozent-Hürde nicht erreichen. Das bedeutet, dass nicht jede Partei, die gewählt wird, auch tatsächlich im Parlament vertreten sein wird.</p>"+
+     "<p>Da keine Partei alleine genug Stimmen hätte, um eine Regierung zu bilden, müssten mehrere Parteien zusammenarbeiten. Eine solche Zusammenarbeit nennt man Koalition. Es gibt verschiedene Koalitionen, die möglich wären, wie zum Beispiel die Große Koalition aus CDU/CSU und SPD. Auch ein Bündnis zwischen CDU/CSU und den Grünen, genannt Schwarz-Grün, wäre denkbar. Eine weitere Möglichkeit wäre die sogenannte Kenia-Koalition, bei der CDU/CSU, SPD und die Grünen zusammen regieren. Die alte Ampel-Koalition, bestehend aus SPD, Grünen und FDP, hätte laut den Umfragen allerdings keine Mehrheit mehr, was bedeutet, dass sie nicht weiter regieren könnte.</p>"+
+     "<p>Neben den Parteien sind auch die Spitzenkandidatinnen und -kandidaten wichtig, denn einer von ihnen wird wahrscheinlich der oder die nächste Bundeskanzler*in. Momentan hat Friedrich Merz von der CDU/CSU die besten Chancen, Kanzler zu werden, da seine Partei vorne liegt und er in der Beliebtheit der Menschen stabil bleibt. Olaf Scholz von der SPD, der aktuelle Kanzler, hat hingegen an Beliebtheit verloren. Auch Robert Habeck von den Grünen, der in der Vergangenheit stark unterstützt wurde, wird aktuell schwächer bewertet. Die Menschen bewerten die Spitzenkandidaten auf einer Skala von +5 bis -5, wobei Friedrich Merz hier am besten abschneidet.</p>",
   4: "",
 };
 
@@ -29,18 +32,34 @@ function BlogPage() {
   const content = blogContent[id] || "Dieser Blogeintrag existiert nicht.";
   const blog1 = id === "1" ? `${process.env.PUBLIC_URL}/images/OlafAlleine.png` : null;
   const blog2 = id === "2" ? `${process.env.PUBLIC_URL}/images/steinmeierScholz.png` : null;
+  const blog3 = id === "3" ? `${process.env.PUBLIC_URL}/images/Blog3Bild1.png`: null;
+  const blog3Image2 = id === "3" ? `${process.env.PUBLIC_URL}/images/Blog3Bild2.png`: null;
+  const blog3Image3 = id === "3" ? `${process.env.PUBLIC_URL}/images/Blog3Bild3.png`: null;
 
   return (
     <div className="blog-page">
-      <h1>Die Aktuelle politische Situation 2024/25</h1>
+      <h1>Die Aktuelle politische Situation 2024/25</h1> {/* Seitenübergreifende Überschrift */}
+
+      {/* Bild mit Quelle für Blog1 */}
       {blog1 && <img src={blog1} alt="Olaf ganz Alleine" className="special-image" />}
       {blog1 && <p className="image-url">Bild: https://www.sueddeutsche.de/politik/ampel-regierung-bruch-lindner-scholz-wissing-lux.HKNiP1bMH3mHy6yKgedzzg?reduced=true</p>}
       {blog1 && <br/>}
+
+      {/* Bild mit Quelle für Blog2 */}
       {blog2 && <img src={blog2} alt="Steinmeier und Scholz" className="special-image" />}
       {blog2 && <p className="image-url">Bild: https://www.spiegel.de/politik/deutschland/vertrauensfrage-liveblog-kanzler-olaf-scholz-stellt-die-vertrauensfrage-im-bundestag-a-4e781807-75dd-45c9-ad5a-1fc108593dbb</p>}
       {blog2 && <br/>}
-      <div dangerouslySetInnerHTML={{ __html: content }} />
-      {/* Alle Einträge für Blog1 (Warum ist die Ampel zerbrochen?)*/}
+      
+      {/* Bilder mit Quelle für Blog3 */}
+      {blog3 && <img src={blog3} alt="Statistik1" className="special-image-blog3" />}
+      {blog3Image2 && <img src={blog3Image2} alt="Statistik2" className="special-image-blog3" />}
+      {blog3Image3 && <img src={blog3Image3} alt="Statistik3" className="special-image-blog3" />}
+      {blog3 && <p className="image-url">Bilder: https://www.zdf.de/nachrichten/politik/deutschland/umfragen-bundestagswahl-2025-100.html</p>}
+      {blog3 && <br/>}
+
+      <div dangerouslySetInnerHTML={{ __html: content }} /> {/* Blogtext einfügen */}
+      
+      {/* Alle unteren Einträge für Blog1 (Warum ist die Ampel zerbrochen?)*/}
       {blog1 && <div className="text-to-left-container">
         {blog1 && <button onClick={() => handleNavigation(2)} >Wie geht es jetzt weiter?</button>}
         {blog1 && <button onClick={() => handleNavigationToMainMenu(1)} >Hauptmenü</button>}
@@ -50,7 +69,8 @@ function BlogPage() {
       {blog1 && <a className='text-to-left' href='https://www.tagesschau.de/inland/ampel-aus-100.html'>Tagesschau - Aus der Ampel</a>}
       {blog1 && <br/>}
       {blog1 && <a className='text-to-left' href='https://www.dw.com/de/deutschland-regierung-ampelkoalition-olaf-scholz-christian-lindner-fdp-spd-gr%C3%BCne/a-70717075'>Die Deutsche Welle - Warum ist die Ampel zerbrochen?</a>}
-      {/* Alle Einträge für Blog2 (Wie geht es jetzt weiter?)*/}
+      
+      {/* Alle unteren Einträge für Blog2 (Wie geht es jetzt weiter?)*/}
       {blog2 && <div className="text-to-left-container">
         {blog2 && <button onClick={() => handleNavigation(3)} >Prognosen Wahl 2025</button>}
         {blog2 && <button onClick={() => handleNavigationToMainMenu(1)} >Hauptmenü</button>}
@@ -60,6 +80,15 @@ function BlogPage() {
       {blog2 && <a className='text-to-left' href='https://www.bundestag.de/dokumente/textarchiv/2024/kw47-vertrauensfrage-1030198'>Bundestag.de - Vertrauensfrage</a>}
       {blog2 && <br/>}
       {blog2 && <a className='text-to-left' href='https://www.zeit.de/politik/deutschland/2024-11/bundestagswahl-2025-termine-ablauf-neuwahl-vorbereitung'>Zeit.de - Termine Ablauf Neuwahl Stand 20.12.2024</a>}
+      
+      {/* Alle unteren Einträge für Blog3 (Prognosen Wahl 2025)*/}  
+      {blog3 && <div className="text-to-left-container">
+        {blog3 && <button disabled >Deaktiviert</button>}
+        {blog3 && <button onClick={() => handleNavigationToMainMenu(1)} >Hauptmenü</button>}
+      </div>}
+      {blog3 && <br/>}
+      {blog3 && <br/>}
+      {blog3 && <a className='text-to-left' href='https://www.zdf.de/nachrichten/politik/deutschland/umfragen-bundestagswahl-2025-100.html'>ZDF.de Umfragen Bundestagswahl 2025</a>}
     </div>
   );
 }

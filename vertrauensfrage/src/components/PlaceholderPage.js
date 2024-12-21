@@ -44,5 +44,6 @@ function PlaceholderPage() {
 }
 // npm run deploy zum Neustart der Github Seite
 // Ladebild und alles was dieses React Emoji ist ändern
+// Buttons auf PC Seite früher 2. Reihe Anfangen
 // Karikaturen, Impressum? Memes?
 export default PlaceholderPage;

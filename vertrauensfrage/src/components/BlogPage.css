@@ -48,5 +48,11 @@
   text-decoration: underline; /* Fügt eine Unterstreichung hinzu, wenn der Benutzer mit der Maus über den Link fährt */
 }
 
-
+.special-image-blog3 {
+  max-width: 100%;     /* Bild nicht breiter als der Container */
+  height: auto;        /* Höhe wird automatisch angepasst */
+  display: block;      /* Verhindert, dass das Bild als Inline-Element angezeigt wird */
+  margin-top: 20px;    /* Abstand nach oben */
+  padding-top: 25px;
+}
 
