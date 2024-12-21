@@ -14,7 +14,14 @@ const blogContent = {
      "<p>Die Bundestagswahl 2025 steht vor der Tür, und schon jetzt gibt es spannende Umfragen, die zeigen, wie die Menschen in Deutschland wählen könnten. Wenn die Wahl schon am kommenden Sonntag stattfinden würde, läge die CDU/CSU deutlich vorne und könnte mit 31 Prozent der Stimmen rechnen. Dahinter folgen die AfD mit 19 Prozent, die SPD mit 15 Prozent und die Grünen mit 14 Prozent. Kleinere Parteien wie die FDP mit 3 Prozent und die Linke mit 4 Prozent hätten es schwer, in den Bundestag einzuziehen, weil sie die wichtige Fünf-Prozent-Hürde nicht erreichen. Das bedeutet, dass nicht jede Partei, die gewählt wird, auch tatsächlich im Parlament vertreten sein wird.</p>"+
      "<p>Da keine Partei alleine genug Stimmen hätte, um eine Regierung zu bilden, müssten mehrere Parteien zusammenarbeiten. Eine solche Zusammenarbeit nennt man Koalition. Es gibt verschiedene Koalitionen, die möglich wären, wie zum Beispiel die Große Koalition aus CDU/CSU und SPD. Auch ein Bündnis zwischen CDU/CSU und den Grünen, genannt Schwarz-Grün, wäre denkbar. Eine weitere Möglichkeit wäre die sogenannte Kenia-Koalition, bei der CDU/CSU, SPD und die Grünen zusammen regieren. Die alte Ampel-Koalition, bestehend aus SPD, Grünen und FDP, hätte laut den Umfragen allerdings keine Mehrheit mehr, was bedeutet, dass sie nicht weiter regieren könnte.</p>"+
      "<p>Neben den Parteien sind auch die Spitzenkandidatinnen und -kandidaten wichtig, denn einer von ihnen wird wahrscheinlich der oder die nächste Bundeskanzler*in. Momentan hat Friedrich Merz von der CDU/CSU die besten Chancen, Kanzler zu werden, da seine Partei vorne liegt und er in der Beliebtheit der Menschen stabil bleibt. Olaf Scholz von der SPD, der aktuelle Kanzler, hat hingegen an Beliebtheit verloren. Auch Robert Habeck von den Grünen, der in der Vergangenheit stark unterstützt wurde, wird aktuell schwächer bewertet. Die Menschen bewerten die Spitzenkandidaten auf einer Skala von +5 bis -5, wobei Friedrich Merz hier am besten abschneidet.</p>",
-  4: "",
+  4: "<p style='font-size: larger; font-style: italic;' >Gibt es Alternativen zur Vertrauensfrage?</p>"+
+     "<p>In Deutschland kann der Bundestag nicht einfach selbst beschließen, sich aufzulösen und Neuwahlen anzusetzen. Es gibt jedoch bestimmte Wege, um eine vorzeitige Auflösung des Parlaments zu erreichen. Eine bekannte Methode ist die Vertrauensfrage: Der Bundeskanzler fragt das Parlament, ob es ihm weiterhin vertraut. Erhält er nicht die Mehrheit der Stimmen, kann der Bundespräsident den Bundestag auflösen, und es kommt zu Neuwahlen.</p>"+ 
+     "<p>Eine Alternative zur Vertrauensfrage ist das konstruktive Misstrauensvotum. Dabei spricht das Parlament dem amtierenden Kanzler das Misstrauen aus, wählt aber gleichzeitig einen neuen Kanzler mit absoluter Mehrheit. Auf diese Weise wird die Regierung ohne Neuwahlen gewechselt.</p>"+
+     "<p>In der Vergangenheit haben Kanzler die Vertrauensfrage manchmal taktisch eingesetzt, um Neuwahlen herbeizuführen, obwohl sie eigentlich noch genügend Unterstützung im Parlament hatten. Ein Beispiel dafür ist Bundeskanzler Gerhard Schröder im Jahr 2005. Er stellte die Vertrauensfrage, verlor sie absichtlich und ermöglichte so Neuwahlen.</p>"+
+     "<p>Diese Vorgehensweise ist umstritten, weil sie das eigentliche Ziel der Vertrauensfrage - nämlich das tatsächliche Überprüfen des Vertrauens der Abgeordneten - zweckentfremdet. Kritiker sehen darin einen Missbrauch, da die Vertrauensfrage genutzt wird, um politische Ziele zu erreichen, anstatt die Stabilität der Regierung zu prüfen. Dies kann das Vertrauen der Bevölkerung in die politischen Prozesse beeinträchtigen und den Eindruck erwecken, dass Regeln manipuliert werden, um bestimmte Ergebnisse zu erzielen.<p>"+
+     "<p>Insgesamt zeigt dieses Thema, wie wichtig transparente und faire Verfahren in der Politik sind, um das Vertrauen der Bürgerinnen und Bürger zu erhalten.</p>",
+  5: "",
+  6: "",
 };
 
 function BlogPage() {
@@ -35,6 +42,7 @@ function BlogPage() {
   const blog3 = id === "3" ? `${process.env.PUBLIC_URL}/images/Blog3Bild1.png`: null;
   const blog3Image2 = id === "3" ? `${process.env.PUBLIC_URL}/images/Blog3Bild2.png`: null;
   const blog3Image3 = id === "3" ? `${process.env.PUBLIC_URL}/images/Blog3Bild3.png`: null;
+  const blog4 = id === "4" ? `${process.env.PUBLIC_URL}/images/BundestagAuflösung.jpg`: null;
 
   return (
     <div className="blog-page">
@@ -56,6 +64,11 @@ function BlogPage() {
       {blog3Image3 && <img src={blog3Image3} alt="Statistik3" className="special-image-blog3" />}
       {blog3 && <p className="image-url">Bilder: https://www.zdf.de/nachrichten/politik/deutschland/umfragen-bundestagswahl-2025-100.html</p>}
       {blog3 && <br/>}
+
+      {/* Bilder mit Quelle für Blog4 */}
+      {blog4 && <img src={blog4} alt="Bundestag Parlament" className="special-image" />}
+      {blog4 && <p className="image-url">Bilder: https://www.bpb.de/themen/politisches-system/wahlen-in-deutschland/335638/vorzeitige-aufloesung-des-bundestages/</p>}
+      {blog4 && <br/>}
 
       <div dangerouslySetInnerHTML={{ __html: content }} /> {/* Blogtext einfügen */}
       
@@ -83,12 +96,24 @@ function BlogPage() {
       
       {/* Alle unteren Einträge für Blog3 (Prognosen Wahl 2025)*/}  
       {blog3 && <div className="text-to-left-container">
-        {blog3 && <button disabled >Deaktiviert</button>}
+        {blog3 && <button onClick={() => handleNavigation(4)} >Alternativen Vertrauensfrage</button>}
         {blog3 && <button onClick={() => handleNavigationToMainMenu(1)} >Hauptmenü</button>}
       </div>}
       {blog3 && <br/>}
       {blog3 && <br/>}
       {blog3 && <a className='text-to-left' href='https://www.zdf.de/nachrichten/politik/deutschland/umfragen-bundestagswahl-2025-100.html'>ZDF.de Umfragen Bundestagswahl 2025</a>}
+      
+      {/* Alle unteren Einträge für Blog3 (Prognosen Wahl 2025)*/}
+      {blog4 && <div className="text-to-left-container">
+        {blog4 && <button onClick={() => handleNavigation(5)} >Karikaturen</button>}
+        {blog4 && <button onClick={() => handleNavigation(6)} >Memes</button>}
+        {blog4 && <button onClick={() => handleNavigationToMainMenu(1)} >Hauptmenü</button>}
+      </div>}
+      {blog4 && <br/>}
+      {blog4 && <br/>}
+      {blog4 && <a className='text-to-left' href='https://www.bpb.de/themen/politisches-system/wahlen-in-deutschland/335638/vorzeitige-aufloesung-des-bundestages/'>bpb.de Vorzeitige Auflösung Bundestag</a>}
+      {blog4 && <br/>}
+      {blog4 && <a className='text-to-left' href='https://www.bundestag.de/services/glossar/glossar/V/vertrauensfrage-245558'>bundestag.de - Glossar - Vertrauensfrage</a>}
     </div>
   );
 }
