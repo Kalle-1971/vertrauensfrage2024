@@ -37,8 +37,9 @@ function PlaceholderPage() {
         <button onClick={() => handleNavigation(2)}>Wie geht es jetzt weiter?</button>
         <button onClick={() => handleNavigation(3)}>Prognosen Wahl 2025</button>
         <button onClick={() => handleNavigation(4)}>Alternativen zur Vertrauensfrage</button>
-        <button onClick={() => handleNavigation(5)}>Karikaturen</button>
-        <button onClick={() => handleNavigation(6)}>Memes</button>
+        <button onClick={() => handleNavigation(5)}>Scholz stellt Vertrauensfrage - Video</button>
+        <button onClick={() => handleNavigation(6)}>Karikaturen</button>
+        <button onClick={() => handleNavigation(7)}>Memes</button>
         <button onClick={() => handleNavigationImpressum(1)}>Impressum</button>
       </div>
     </div>

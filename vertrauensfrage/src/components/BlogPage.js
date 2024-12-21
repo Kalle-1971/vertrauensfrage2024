@@ -20,8 +20,9 @@ const blogContent = {
      "<p>In der Vergangenheit haben Kanzler die Vertrauensfrage manchmal taktisch eingesetzt, um Neuwahlen herbeizuführen, obwohl sie eigentlich noch genügend Unterstützung im Parlament hatten. Ein Beispiel dafür ist Bundeskanzler Gerhard Schröder im Jahr 2005. Er stellte die Vertrauensfrage, verlor sie absichtlich und ermöglichte so Neuwahlen.</p>"+
      "<p>Diese Vorgehensweise ist umstritten, weil sie das eigentliche Ziel der Vertrauensfrage - nämlich das tatsächliche Überprüfen des Vertrauens der Abgeordneten - zweckentfremdet. Kritiker sehen darin einen Missbrauch, da die Vertrauensfrage genutzt wird, um politische Ziele zu erreichen, anstatt die Stabilität der Regierung zu prüfen. Dies kann das Vertrauen der Bevölkerung in die politischen Prozesse beeinträchtigen und den Eindruck erwecken, dass Regeln manipuliert werden, um bestimmte Ergebnisse zu erzielen.<p>"+
      "<p>Insgesamt zeigt dieses Thema, wie wichtig transparente und faire Verfahren in der Politik sind, um das Vertrauen der Bürgerinnen und Bürger zu erhalten.</p>",
-  5: "<p style='font-size: larger; font-style: italic;' >Karikaturen</p>",
-  6: "<p style='font-size: larger; font-style: italic;' >Memes</p>",
+  5: "<p style='font-size: larger; font-style: italic;' >ARD Video - Scholz stellt Vertrauensfrage</p>",
+  6: "<p style='font-size: larger; font-style: italic;' >Karikaturen</p>",
+  7: "<p style='font-size: larger; font-style: italic;' >Memes</p>",
 };
 
 function BlogPage() {
@@ -44,6 +45,7 @@ function BlogPage() {
   const blog3Image3 = id === "3" ? `${process.env.PUBLIC_URL}/images/Blog3Bild3.png`: null;
   const blog4 = id === "4" ? `${process.env.PUBLIC_URL}/images/BundestagAuflösung.jpg`: null;
   const blog4Image2 = id === "4" ? `${process.env.PUBLIC_URL}/images/GrafikVertrauensfrageMisstrauensvotum.png`: null;
+  const blog5 = id === "5";
 
   return (
     <div className="blog-page">
@@ -107,8 +109,7 @@ function BlogPage() {
       {/* Alle unteren Einträge für Blog3 (Prognosen Wahl 2025)*/}
       {blog4Image2 && <img src={blog4Image2} alt="Grafik" className="special-image" />}
       {blog4 && <div className="text-to-left-container">
-        {blog4 && <button onClick={() => handleNavigation(5)} >Karikaturen</button>}
-        {blog4 && <button onClick={() => handleNavigation(6)} >Memes</button>}
+        {blog4 && <button onClick={() => handleNavigation(5)} >Scholz stellt Vertrauensfrage - Video</button>}
         {blog4 && <button onClick={() => handleNavigationToMainMenu(1)} >Hauptmenü</button>}
       </div>}
       {blog4 && <br/>}
@@ -116,6 +117,7 @@ function BlogPage() {
       {blog4 && <a className='text-to-left' href='https://www.bpb.de/themen/politisches-system/wahlen-in-deutschland/335638/vorzeitige-aufloesung-des-bundestages/'>bpb.de Vorzeitige Auflösung Bundestag</a>}
       {blog4 && <br/>}
       {blog4 && <a className='text-to-left' href='https://www.bundestag.de/services/glossar/glossar/V/vertrauensfrage-245558'>bundestag.de - Glossar - Vertrauensfrage</a>}
+      {blog5 && <iframe className="special-video" src="https://www.ardmediathek.de/embed/Y3JpZDovL2JyLmRlL2Jyb2FkY2FzdC9GMjAyM1dPMDEzMDUxQTAvc2VjdGlvbi9jZTY0MzAxYS0xNzA2LTQxYTEtOGFlNy04OWQwN2Q1OGVlYTI" width="640" height="360" allowfullscreen allow="clipboard-read; clipboard-write" frameBorder="0" scrolling="no" title="ARD Video - Scholz stellt Vertrauensfrage" tabIndex="-1" t></iframe>}
     </div>
   );
 }

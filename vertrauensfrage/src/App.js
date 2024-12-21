@@ -1,3 +1,4 @@
+// App.js
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import Captcha from "./components/Captcha";
@@ -26,7 +27,36 @@ function App() {
     setCaptchaSolved(true);
   };
 
+  // Preload Bilder
   useEffect(() => {
+    const preloadImages = [
+      `${process.env.PUBLIC_URL}/images/OlafScholz.png`,
+      `${process.env.PUBLIC_URL}/images/left.png`,
+      `${process.env.PUBLIC_URL}/images/right.png`,
+      `${process.env.PUBLIC_URL}/images/steinmeierScholz.png`,
+      `${process.env.PUBLIC_URL}/images/OlafAlleine.png`,
+      `${process.env.PUBLIC_URL}/images/GrafikVertrauensfrageMisstrauensvotum.png`,
+      `${process.env.PUBLIC_URL}/images/Blog3Bild1.png`,
+      `${process.env.PUBLIC_URL}/images/Blog3Bild2.png`,
+      `${process.env.PUBLIC_URL}/images/Blog3Bild3.png`,
+      `${process.env.PUBLIC_URL}/images/BundestagAuflösung.jpg`,
+      `${process.env.PUBLIC_URL}/images/item1.jpg`,
+      `${process.env.PUBLIC_URL}/images/item2.jpg`,
+      `${process.env.PUBLIC_URL}/images/item3.jpg`,
+      `${process.env.PUBLIC_URL}/images/item4.jpg`,
+      `${process.env.PUBLIC_URL}/images/item5.jpg`,
+      `${process.env.PUBLIC_URL}/images/item6.jpg`,
+      `${process.env.PUBLIC_URL}/images/item7.jpg`,
+      `${process.env.PUBLIC_URL}/images/item8.jpg`,
+      `${process.env.PUBLIC_URL}/images/item9.jpg`,
+    ];
+
+    // Preload-Funktion für jedes Bild
+    preloadImages.forEach((src) => {
+      const img = new Image();
+      img.src = src;
+    });
+
     // Verzögere den Wechsel von `loading` auf `false`, um eine minimale Ladezeit von 3 Sekunden zu garantieren
     const minLoadTime = setTimeout(() => {
       setLoading(false); // Ladebildschirm wird entfernt nach minimaler Zeit
@@ -57,7 +87,7 @@ function App() {
   }, [isContentLoaded, loading]);
 
   return (
-    <Router basename="/vertrauensfrage2024">
+    <Router basename="/vertrauensfrage2024"> {/* Router nur hier */}
       <div className="App">
         {captchaSolved ? (
           <>

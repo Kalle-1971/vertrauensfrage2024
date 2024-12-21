@@ -56,3 +56,13 @@
   padding-top: 25px;
 }
 
+iframe {
+  display: block;
+  margin: 0 auto;
+  border: none; /* Entferne Rahmen, falls nicht nötig */
+}
+
+.special-video {
+  display: block;      /* Verhindert, dass das Bild als Inline-Element angezeigt wird */
+  margin-bottom: 50%;    /* Abstand nach oben */
+}
