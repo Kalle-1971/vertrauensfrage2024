@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Captcha from "./components/Captcha";
 import PlaceholderPage from "./components/PlaceholderPage";
 import BlogPage from "./components/BlogPage";
+import Impressum from "./components/Impressum";
 import "./App.css";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Routes>
             <Route path="/" element={<PlaceholderPage />} />
             <Route path="/blog/:id" element={<BlogPage />} />
+            <Route path="/impressum/:id" element={<Impressum />} />
           </Routes>
         ) : (
           <Captcha onSuccess={handleCaptchaSuccess} />
