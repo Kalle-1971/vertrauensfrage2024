@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/vertrauensfrage2024/static/css/main.9ae50633.css",
+    "main.css": "/vertrauensfrage2024/static/css/main.05c742f3.css",
     "main.js": "/vertrauensfrage2024/static/js/main.cb989dea.js",
     "index.html": "/vertrauensfrage2024/index.html",
-    "main.9ae50633.css.map": "/vertrauensfrage2024/static/css/main.9ae50633.css.map",
+    "main.05c742f3.css.map": "/vertrauensfrage2024/static/css/main.05c742f3.css.map",
     "main.cb989dea.js.map": "/vertrauensfrage2024/static/js/main.cb989dea.js.map"
   },
   "entrypoints": [
-    "static/css/main.9ae50633.css",
+    "static/css/main.05c742f3.css",
     "static/js/main.cb989dea.js"
   ]
 }
