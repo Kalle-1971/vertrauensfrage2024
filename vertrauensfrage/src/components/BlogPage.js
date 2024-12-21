@@ -43,6 +43,7 @@ function BlogPage() {
   const blog3Image2 = id === "3" ? `${process.env.PUBLIC_URL}/images/Blog3Bild2.png`: null;
   const blog3Image3 = id === "3" ? `${process.env.PUBLIC_URL}/images/Blog3Bild3.png`: null;
   const blog4 = id === "4" ? `${process.env.PUBLIC_URL}/images/BundestagAuflösung.jpg`: null;
+  const blog4Image2 = id === "4" ? `${process.env.PUBLIC_URL}/images/GrafikVertrauensfrageMisstrauensvotum.png`: null;
 
   return (
     <div className="blog-page">
@@ -104,6 +105,7 @@ function BlogPage() {
       {blog3 && <a className='text-to-left' href='https://www.zdf.de/nachrichten/politik/deutschland/umfragen-bundestagswahl-2025-100.html'>ZDF.de Umfragen Bundestagswahl 2025</a>}
       
       {/* Alle unteren Einträge für Blog3 (Prognosen Wahl 2025)*/}
+      {blog4Image2 && <img src={blog4Image2} alt="Grafik" className="special-image" />}
       {blog4 && <div className="text-to-left-container">
         {blog4 && <button onClick={() => handleNavigation(5)} >Karikaturen</button>}
         {blog4 && <button onClick={() => handleNavigation(6)} >Memes</button>}
