@@ -1,8 +1,10 @@
 import React, { useState } from "react";
+import { ClimbingBoxLoader } from "react-spinners"; // Importieren des Loaders
 import "./Captcha.css";
 
 function Captcha({ onSuccess }) {
   const [selected, setSelected] = useState([]);
+  const [isLoading, setIsLoading] = useState(false); // Zustand für den Ladebildschirm
 
   const gridItems = [
     { id: 1, isCorrect: true },
@@ -34,10 +36,15 @@ function Captcha({ onSuccess }) {
       correctSelections.every((id) => selected.includes(id))
     ) {
       alert("Richtig! (: Er ist einfach überall! :D");
-      onSuccess();
+      // Simuliere eine Ladezeit nach dem Alert
+      setIsLoading(true); // Setze den Ladezustand auf true
+      setTimeout(() => {
+        setIsLoading(false); // Nach 3 Sekunden Ladebildschirm ausblenden
+        onSuccess(); // Bestätige den Erfolg
+      }, 3000); // Ladezeit von 3 Sekunden simulieren
     } else {
       alert("Also ich sehe den Markus öfter! ):");
-      setSelected([]);
+      setSelected([]); // Leere die Auswahl zurück
     }
   };
 
@@ -56,6 +63,14 @@ function Captcha({ onSuccess }) {
         ))}
       </div>
       <button onClick={handleSubmit}>Bestätigen</button>
+
+      {/* Ladeanimation anzeigen, wenn isLoading true ist */}
+      {isLoading && (
+        <div className="loading-screen">
+          <ClimbingBoxLoader color="#36d7b7" size={15} />
+          <p>Die Seite wird geladen...</p>
+        </div>
+      )}
     </div>
   );
 }
