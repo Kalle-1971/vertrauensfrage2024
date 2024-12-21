@@ -7,7 +7,7 @@ const Impressum = () => {
       <h1>Impressum</h1>
       <p><strong>Dr.-Carl-Hermann-Gymnasium</strong></p>
       <p>Berliner Straße 8b<br />39218 Schönebeck (Elbe)</p>
-      <p><strong>Erstellt für den Sozialkunde Unterricht:</strong><br></br>Kurslehrerin: K.Prinzke, Gruppe: Tim, Dean, Luca</p>
+      <p><strong>Erstellt für den Sozialkunde Unterricht:</strong><br></br>Kurslehrerin: K.Prinzke<br></br>Gruppe: Tim Kallausch, Dean Gericke, Luca Oeding</p>
       <p><strong>Vertreten durch:</strong><br />Schulleiter Dr. Ulrich Plaga</p>
 
       <p><strong>Kontakt:</strong><br />

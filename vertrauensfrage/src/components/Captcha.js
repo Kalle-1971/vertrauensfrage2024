@@ -67,7 +67,7 @@ function Captcha({ onSuccess }) {
       {/* Ladeanimation anzeigen, wenn isLoading true ist */}
       {isLoading && (
         <div className="loading-screen">
-          <ClimbingBoxLoader color="#36d7b7" size={15} />
+          <ClimbingBoxLoader color="#dcdcdc" size={15} />
           <p>Die Seite wird geladen...</p>
         </div>
       )}

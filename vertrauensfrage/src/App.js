@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useLayoutEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import Captcha from "./components/Captcha";
 import PlaceholderPage from "./components/PlaceholderPage";
@@ -7,13 +7,11 @@ import Impressum from "./components/Impressum";
 import { ClimbingBoxLoader } from "react-spinners"; // ClimbingBoxLoader importieren
 import "./App.css";
 
-// ScrollToTop-Komponente: Scrollt immer nach oben, wenn die Route gewechselt wird
 const ScrollToTop = () => {
   const location = useLocation();
 
-  useLayoutEffect(() => {
-    // Scrollt immer zum oberen Rand der Seite, wenn sich die Route ändert
-    window.scrollTo(0, 0);
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scrollt nach oben bei jedem Routenwechsel
   }, [location]);
 
   return null;
@@ -21,14 +19,20 @@ const ScrollToTop = () => {
 
 function App() {
   const [captchaSolved, setCaptchaSolved] = useState(false);
-  const [loading, setLoading] = useState(true); // Zustand, um den Ladezustand zu überwachen
-  const [isContentLoaded, setIsContentLoaded] = useState(false); // Zustand, um den Status zu überprüfen, ob die Inhalte vollständig geladen sind
+  const [loading, setLoading] = useState(true); // Zustand für Ladebildschirm
+  const [isContentLoaded, setIsContentLoaded] = useState(false); // Zustand, der prüft, ob die Inhalte geladen sind
 
   const handleCaptchaSuccess = () => {
     setCaptchaSolved(true);
   };
 
   useEffect(() => {
+    // Verzögere den Wechsel von `loading` auf `false`, um eine minimale Ladezeit von 3 Sekunden zu garantieren
+    const minLoadTime = setTimeout(() => {
+      setLoading(false); // Ladebildschirm wird entfernt nach minimaler Zeit
+    }, 3000); // Wartezeit: 3 Sekunden
+
+    // Simuliere das Laden von Inhalten (z. B. Bilder)
     const images = document.querySelectorAll("img");
     const imagePromises = Array.from(images).map((img) => {
       return new Promise((resolve) => {
@@ -39,20 +43,14 @@ function App() {
 
     // Warte, bis alle Bilder geladen sind
     Promise.all(imagePromises).then(() => {
-      setIsContentLoaded(true); // Bilder fertig geladen
+      setIsContentLoaded(true); // Alle Bilder sind geladen
     });
 
-    // Ladebildschirm bleibt mindestens 3 Sekunden sichtbar
-    const minLoadTime = setTimeout(() => {
-      if (!isContentLoaded) setLoading(false);
-    }, 3000);
-
-    // Aufräumen des Timers, falls die Komponente entfernt wird
-    return () => clearTimeout(minLoadTime);
-  }, [isContentLoaded]);
+    return () => clearTimeout(minLoadTime); // Timer aufräumen
+  }, []); // Der Effekt wird nur einmal beim Initialisieren ausgeführt
 
   useEffect(() => {
-    // Sobald Bilder geladen und 3 Sekunden abgelaufen sind
+    // Sobald Bilder geladen und 3 Sekunden abgelaufen sind, setze `loading` auf false
     if (isContentLoaded && loading) {
       setLoading(false);
     }
@@ -67,7 +65,7 @@ function App() {
             {loading ? (
               <div className="loading-screen">
                 {/* ClimbingBoxLoader anzeigen */}
-                <ClimbingBoxLoader color="#36d7b7" size={15} />
+                <ClimbingBoxLoader color="#ff5733" size={15} />
                 <p>Inhalte werden geladen...</p>
               </div>
             ) : (

@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* In src/index.css */
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Entferne oder kommentiere dies aus, um das React-Logo zu verhindern */
+.ReactLogo {
+  display: none;
+}

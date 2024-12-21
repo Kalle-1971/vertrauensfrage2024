@@ -1,7 +1,7 @@
 {
   "homepage": "https://Kalle-1971.github.io/vertrauensfrage2024",
   "name": "vertrauensfrage",
-  "version": "0.1.0",
+  "version": "1.4.3",
   "private": true,
   "dependencies": {
     "cra-template": "1.2.0",
