@@ -26,9 +26,27 @@
   font-size: xx-small;
   text-align: left;
 }
-.text-to-left {
-  text-align: left;
-  display: block; /* Damit Links und der Button ihre eigene Zeile einnehmen */
-  margin-left: 0; /* Entfernt eventuelle Einrückungen */
+.text-to-left-container {
+  display: flex; /* Aktiviert Flexbox */
+  align-items: center; /* Zentriert Buttons vertikal */
+  gap: 10px; /* Fügt einen Abstand von 10px zwischen den Buttons ein */
 }
+
+.text-to-left {
+  display: block;        /* Macht den Link zu einem Block-Element, damit er in einer eigenen Zeile steht */
+  text-align: left;      /* Setzt den Text im Link linksbündig */
+  margin: 5px 0;         /* Optional: Fügt einen kleinen Abstand über und unter den Links hinzu */
+  color: #007BFF;        /* Setzt die Textfarbe des Links auf Blau */
+  text-decoration: none; /* Entfernt die Unterstreichung des Links */
+  margin-top: 0;   /* Entfernt den oberen Abstand */
+  margin-bottom: 0; /* Entfernt den unteren Abstand */
+  padding: 0; 
+}
+
+.text-to-left:hover {
+  color: #0056b3;        /* Setzt die Hover-Farbe des Links auf ein dunkleres Blau */
+  text-decoration: underline; /* Fügt eine Unterstreichung hinzu, wenn der Benutzer mit der Maus über den Link fährt */
+}
+
+
 

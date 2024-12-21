@@ -20,10 +20,15 @@ function BlogPage() {
     const handleNavigation = (id) => {
       navigate(`/blog/${id}`);
     };
+
+    const handleNavigationToMainMenu = () => {
+      navigate(`/`);
+    };
   
   const { id } = useParams();
   const content = blogContent[id] || "Dieser Blogeintrag existiert nicht.";
   const blog1 = id === "1" ? `${process.env.PUBLIC_URL}/images/OlafAlleine.png` : null;
+  const blog2 = id === "2" ? `${process.env.PUBLIC_URL}/images/steinmeierScholz.png` : null;
 
   return (
     <div className="blog-page">
@@ -31,13 +36,30 @@ function BlogPage() {
       {blog1 && <img src={blog1} alt="Olaf ganz Alleine" className="special-image" />}
       {blog1 && <p className="image-url">Bild: https://www.sueddeutsche.de/politik/ampel-regierung-bruch-lindner-scholz-wissing-lux.HKNiP1bMH3mHy6yKgedzzg?reduced=true</p>}
       {blog1 && <br/>}
+      {blog2 && <img src={blog2} alt="Steinmeier und Scholz" className="special-image" />}
+      {blog2 && <p className="image-url">Bild: https://www.spiegel.de/politik/deutschland/vertrauensfrage-liveblog-kanzler-olaf-scholz-stellt-die-vertrauensfrage-im-bundestag-a-4e781807-75dd-45c9-ad5a-1fc108593dbb</p>}
+      {blog2 && <br/>}
       <div dangerouslySetInnerHTML={{ __html: content }} />
-      {blog1 && <button onClick={() => handleNavigation(2)} className='text-to-left' >Wie geht es jetzt weiter?</button>}
-      {blog1 && <br></br>}
+      {/* Alle Einträge für Blog1 (Warum ist die Ampel zerbrochen?)*/}
+      {blog1 && <div className="text-to-left-container">
+        {blog1 && <button onClick={() => handleNavigation(2)} >Wie geht es jetzt weiter?</button>}
+        {blog1 && <button onClick={() => handleNavigationToMainMenu(1)} >Hauptmenü</button>}
+      </div>}
+      {blog1 && <br/>}
       {blog1 && <br/>}
       {blog1 && <a className='text-to-left' href='https://www.tagesschau.de/inland/ampel-aus-100.html'>Tagesschau - Aus der Ampel</a>}
       {blog1 && <br/>}
       {blog1 && <a className='text-to-left' href='https://www.dw.com/de/deutschland-regierung-ampelkoalition-olaf-scholz-christian-lindner-fdp-spd-gr%C3%BCne/a-70717075'>Die Deutsche Welle - Warum ist die Ampel zerbrochen?</a>}
+      {/* Alle Einträge für Blog2 (Wie geht es jetzt weiter?)*/}
+      {blog2 && <div className="text-to-left-container">
+        {blog2 && <button onClick={() => handleNavigation(3)} >Prognosen Wahl 2025</button>}
+        {blog2 && <button onClick={() => handleNavigationToMainMenu(1)} >Hauptmenü</button>}
+      </div>}
+      {blog2 && <br/>}
+      {blog2 && <br/>}
+      {blog2 && <a className='text-to-left' href='https://www.bundestag.de/dokumente/textarchiv/2024/kw47-vertrauensfrage-1030198'>Bundestag.de - Vertrauensfrage</a>}
+      {blog2 && <br/>}
+      {blog2 && <a className='text-to-left' href='https://www.zeit.de/politik/deutschland/2024-11/bundestagswahl-2025-termine-ablauf-neuwahl-vorbereitung'>Zeit.de - Termine Ablauf Neuwahl Stand 20.12.2024</a>}
     </div>
   );
 }
