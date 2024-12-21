@@ -20,7 +20,7 @@ const blogContent = {
      "<p>In der Vergangenheit haben Kanzler die Vertrauensfrage manchmal taktisch eingesetzt, um Neuwahlen herbeizuführen, obwohl sie eigentlich noch genügend Unterstützung im Parlament hatten. Ein Beispiel dafür ist Bundeskanzler Gerhard Schröder im Jahr 2005. Er stellte die Vertrauensfrage, verlor sie absichtlich und ermöglichte so Neuwahlen.</p>"+
      "<p>Diese Vorgehensweise ist umstritten, weil sie das eigentliche Ziel der Vertrauensfrage - nämlich das tatsächliche Überprüfen des Vertrauens der Abgeordneten - zweckentfremdet. Kritiker sehen darin einen Missbrauch, da die Vertrauensfrage genutzt wird, um politische Ziele zu erreichen, anstatt die Stabilität der Regierung zu prüfen. Dies kann das Vertrauen der Bevölkerung in die politischen Prozesse beeinträchtigen und den Eindruck erwecken, dass Regeln manipuliert werden, um bestimmte Ergebnisse zu erzielen.<p>"+
      "<p>Insgesamt zeigt dieses Thema, wie wichtig transparente und faire Verfahren in der Politik sind, um das Vertrauen der Bürgerinnen und Bürger zu erhalten.</p>",
-  5: "",
+  5: "<p style='font-size: larger; font-style: italic;' >Karikaturen</p>",
   6: "",
 };
 
