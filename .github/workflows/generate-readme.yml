@@ -1,0 +1,33 @@
+name: Generate README
+
+on:
+  push:
+    branches:
+      - main  # Der Workflow wird ausgelöst, wenn auf den 'main' Branch gepusht wird.
+  pull_request:
+    branches:
+      - main  # Der Workflow wird auch ausgelöst, wenn ein PR in den 'main' Branch gestellt wird.
+
+jobs:
+  generate-readme:
+    runs-on: ubuntu-latest  # Der Workflow wird auf einem Ubuntu-Runner ausgeführt.
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2  # Dieser Schritt stellt sicher, dass das Repository im Workflow verfügbar ist.
+
+    - name: Install Dependencies
+      run: |
+        npm install -g readme-md-generator  # Installiert das readme-md-generator Tool.
+
+    - name: Generate README
+      run: |
+        npx readme-md-generator  # Führt das Tool aus, um die README.md zu erstellen.
+
+    - name: Commit and Push README
+      run: |
+        git config --local user.name "github-actions"  # Git-Konfiguration für den Commit.
+        git config --local user.email "github-actions@github.com"
+        git add README.md  # Fügt die generierte README.md zum Commit hinzu.
+        git commit -m "Automatisch generierte README.md"  # Commitet die README.
+        git push  # Pusht die Änderungen zurück ins Repository.
