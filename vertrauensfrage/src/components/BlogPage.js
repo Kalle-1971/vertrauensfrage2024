@@ -117,7 +117,7 @@ function BlogPage() {
       {blog4 && <a className='text-to-left' href='https://www.bpb.de/themen/politisches-system/wahlen-in-deutschland/335638/vorzeitige-aufloesung-des-bundestages/'>bpb.de Vorzeitige Auflösung Bundestag</a>}
       {blog4 && <br/>}
       {blog4 && <a className='text-to-left' href='https://www.bundestag.de/services/glossar/glossar/V/vertrauensfrage-245558'>bundestag.de - Glossar - Vertrauensfrage</a>}
-      {blog5 && <iframe className="special-video" src="https://www.ardmediathek.de/embed/Y3JpZDovL2JyLmRlL2Jyb2FkY2FzdC9GMjAyM1dPMDEzMDUxQTAvc2VjdGlvbi9jZTY0MzAxYS0xNzA2LTQxYTEtOGFlNy04OWQwN2Q1OGVlYTI" width="640" height="360" allowfullscreen allow="clipboard-read; clipboard-write" frameBorder="0" scrolling="no" title="ARD Video - Scholz stellt Vertrauensfrage" tabIndex="-1" t></iframe>}
+      {blog5 && <iframe className="special-video" loading="lazy" src="https://www.ardmediathek.de/embed/Y3JpZDovL2JyLmRlL2Jyb2FkY2FzdC9GMjAyM1dPMDEzMDUxQTAvc2VjdGlvbi9jZTY0MzAxYS0xNzA2LTQxYTEtOGFlNy04OWQwN2Q1OGVlYTI" width="640" height="360" allowfullscreen allow="clipboard-read; clipboard-write" frameBorder="0" scrolling="no" title="ARD Video - Scholz stellt Vertrauensfrage" tabIndex="-1" t></iframe>}
     </div>
   );
 }

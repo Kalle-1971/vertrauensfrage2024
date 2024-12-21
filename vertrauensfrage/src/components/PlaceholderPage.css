@@ -1,6 +1,6 @@
 .placeholder {
   padding: 20px;
-  margin-top: -10%;
+  margin-top: 0;
   padding: 0;
 }
 
@@ -44,6 +44,53 @@
   justify-content: center;
   gap: 10px;
   flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+  .button-container {
+    flex-direction: column; /* Buttons untereinander anordnen */
+    align-items: center;/* Zentriert die Buttons */
+    gap: 20px; /* Größere Lücke zwischen den Buttons */
+    margin-bottom: 30px; /* Größere Lücke unter den Buttons */
+  }
+  .placeholder{
+    padding: 20px;
+    margin-top: 0;
+    padding: 0;
+  }
+  .page-title {
+    font-size: clamp(16px, 5vw, 28px);/* Reduziert die Schriftgröße */
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center; /* Zentriert die Überschrift */
+    word-wrap: break-word; /* Bricht lange Wörter */
+    word-break: break-word; /* Umbruch auch mitten im Wort */
+    white-space: normal; /* Zeilenumbruch erlauben */
+    width: auto; /* Verhindert feste Breite */
+    max-width: 100%; /* Passt die Breite an das Gerät an */
+    padding: 0 10px; /* Fügt Innenabstand hinzu */
+    box-sizing: border-box; /* Sorgt dafür, dass Padding und Breite zusammen berücksichtigt werden */
+  }
+  
+  
+}
+
+@media (max-width: 400px) {
+  .page-title {
+    font-size: clamp(16px, 5vw, 28px); /* Reduziert die Schriftgröße */
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center; /* Zentriert die Überschrift */
+    word-wrap: break-word; /* Bricht lange Wörter */
+    word-break: break-word; /* Umbruch auch mitten im Wort */
+    white-space: normal; /* Zeilenumbruch erlauben */
+    width: auto; /* Verhindert feste Breite */
+    max-width: 100%; /* Passt die Breite an das Gerät an */
+    padding: 0 10px; /* Fügt Innenabstand hinzu */
+    box-sizing: border-box; /* Sorgt dafür, dass Padding und Breite zusammen berücksichtigt werden */
+  }
+  
+  
 }
 
 button {
@@ -131,7 +178,7 @@ button:hover {
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 680px) {
   .side-image {
     display: none;
   }
