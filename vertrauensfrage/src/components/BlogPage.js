@@ -21,7 +21,7 @@ const blogContent = {
      "<p>Diese Vorgehensweise ist umstritten, weil sie das eigentliche Ziel der Vertrauensfrage - nämlich das tatsächliche Überprüfen des Vertrauens der Abgeordneten - zweckentfremdet. Kritiker sehen darin einen Missbrauch, da die Vertrauensfrage genutzt wird, um politische Ziele zu erreichen, anstatt die Stabilität der Regierung zu prüfen. Dies kann das Vertrauen der Bevölkerung in die politischen Prozesse beeinträchtigen und den Eindruck erwecken, dass Regeln manipuliert werden, um bestimmte Ergebnisse zu erzielen.<p>"+
      "<p>Insgesamt zeigt dieses Thema, wie wichtig transparente und faire Verfahren in der Politik sind, um das Vertrauen der Bürgerinnen und Bürger zu erhalten.</p>",
   5: "<p style='font-size: larger; font-style: italic;' >Karikaturen</p>",
-  6: "",
+  6: "<p style='font-size: larger; font-style: italic;' >Memes</p>",
 };
 
 function BlogPage() {
